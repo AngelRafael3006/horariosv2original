@@ -1,0 +1,1 @@
+<h1>Aqui va el formulario html de destroy</h1>

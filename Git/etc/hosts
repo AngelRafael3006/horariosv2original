@@ -1,0 +1,13 @@
+#
+127.0.0.1 localhost
+::1 localhost
+
+
+# Herd generated Hosts. Do not change.
+127.0.0.1 database.herd.test
+127.0.0.1 gestorgage.test
+127.0.0.1 horariosp2.test
+127.0.0.1 sistema1.test
+127.0.0.1 sistemaa1.test
+127.0.0.1 sistemam1.test
+# End Herd generated Hosts
