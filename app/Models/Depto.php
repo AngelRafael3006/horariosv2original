@@ -10,7 +10,8 @@ class Depto extends Model
 {
     use HasFactory;
 
-    public function carreras(): HasMany{
+    public function carreras(): HasMany
+    {
         return $this->hasMany(Carrera::factory());
-}
+    }
 }
