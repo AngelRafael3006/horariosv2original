@@ -7,6 +7,7 @@
 @section("contenido2")
 
 <div class="container">
+    <h1>hola</h1>
     <ul>
         @foreach ($errors->all() as $error )
         <li>
