@@ -17,7 +17,8 @@ class AlumnoController extends Controller
         $this->alumnos = Alumno::paginate(5);
         $this->val=[
             'nombre'=>['required', 'min:3','max:50','regex:/^[\p{L}\s]+$/u'],
-            'apellido'=>'required',
+            'apellidop'=>'required',
+            'apellidom'=>'required',
             'email'=>'required'
         ];
      }
@@ -103,7 +104,7 @@ class AlumnoController extends Controller
     {
         $validado=$request->validate($this->val);
         $alumno->update($validado);
-        return redirect()->route("alumnos2.index");
+        return redirect()->route("alumnos.index");
     }
 
     /**

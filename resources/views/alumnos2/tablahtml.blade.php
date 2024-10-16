@@ -20,7 +20,8 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Apellido</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
                     <th>Email</th>
                     <th></th>
                     <th></th>
@@ -34,7 +35,8 @@
                 >
                     <td scope="row">{{ $alumno->id }}</td>
                     <td>{{ $alumno->nombre }}</td>
-                    <td>{{ $alumno->apellido }}</td>
+                    <td>{{ $alumno->apellidop }}</td>
+                    <td>{{ $alumno->apellidom }}</td>
                     <td>{{ $alumno->email }}</td>
                     <td><a href="{{route('alumnos.edit',$alumno->id)}}" class="btn button btn-primary" >Ed</a></td>
                     <td><a href="{{route('alumnos.show',$alumno->id)}}" class="btn button btn-primary" >X</a></td>

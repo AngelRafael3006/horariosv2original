@@ -7,7 +7,6 @@
 @section("contenido2")
 
 <div class="container">
-    <h1>ultimo intento</h1>
     <ul>
         @foreach ($errors->all() as $error )
         <li>
@@ -40,11 +39,20 @@
             </div>
         </div>
         <div class="mb-3 row">
-            <label for="apellido" class="col-4 col-form-label">Apellido paterno</label>
+            <label for="apellidop" class="col-4 col-form-label">Apellido paterno</label>
             <div class="col-8">
-                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido paterno" value="{{@old('apellido',$alumno->apellido)}} " {{$des}}/>
-                @error("apellido")
-                <p>Error en el apellido: {{$message}}</p>
+                <input type="text" class="form-control" name="apellidop" id="apellidop" placeholder="Apellido paterno" value="{{@old('apellidop',$alumno->apellidop)}} " {{$des}}/>
+                @error("apellidop")
+                <p>Error en el apellido paterno: {{$message}}</p>
+            @enderror
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="apellidom" class="col-4 col-form-label">Apellido Materno</label>
+            <div class="col-8">
+                <input type="text" class="form-control" name="apellidom" id="apellidom" placeholder="Apellido materno" value="{{@old('apellidom',$alumno->apellidom)}} " {{$des}}/>
+                @error("apellidom")
+                <p>Error en el apellido materno: {{$message}}</p>
             @enderror
             </div>
         </div>
